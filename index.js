@@ -94,7 +94,7 @@ this function resets/clears everything on the form
 */
 function resetGenerator() {
   display.value = "";
-  passLength.value = "";
+  passLength.value = 0;
   lowercaseChecked.checked = false;
   uppercaseChecked.checked = false;
   numbersChecked.checked = false;
