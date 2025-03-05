@@ -11,25 +11,27 @@
       <h1>Password Generator</h1>
       <fieldset>
         <legend>Password Criteria</legend>
-        <input type="checkbox" id="lowercase" name="lowercase" >
+        <input type="checkbox" id="lowercase" name="lowercase" />
         <label for="lowercase">Lowercase Letters</label>
-        <input type="checkbox" id="uppercase" name="uppercase" >
+        <input type="checkbox" id="uppercase" name="uppercase" />
         <label for="uppercase">Uppercase Letters</label>
-        <input type="checkbox" id="numbers" name="numbers" >
+        <input type="checkbox" id="numbers" name="numbers" />
         <label for="numbers">Numbers</label>
-        <br/>
-        <input type="checkbox" id="symbols" name="symbols" >
+        <br />
+        <input type="checkbox" id="symbols" name="symbols" />
         <label for="symbols">Symbols</label>
         <br />
         <label for="length">Password Length: </label>
-        <input type="number" id="passLength" name="passLength" >
+        <input type="number" id="passLength" name="passLength" />
       </fieldset>
-      <button id="generateButton">Generate Password</button>
-
+      <div class="button-container">
+        <button id="generateButton">Generate Password</button>
+      </div>
       <h2>Generated Password:</h2>
       <textarea id="display" readonly></textarea>
-
-      <button onClick="resetGenerator()">Reset</button>
+      <div class="reset-container">
+        <button onClick="resetGenerator()">Reset</button>
+      </div>
     </div>
 
     <script src="index.js"></script>
