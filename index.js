@@ -4,6 +4,17 @@ const lowercaseChecked = document.getElementById("lowercase");
 const uppercaseChecked = document.getElementById("uppercase");
 const numbersChecked = document.getElementById("numbers");
 const symbolsChecked = document.getElementById("symbols");
+const rainContainer = document.getElementById("rain");
+const chars = "01🟩01⚡"; //for code rain
+
+//display code rain on background
+for (let i = 0; i < 100; i++) {
+  const span = document.createElement("span");
+  span.style.left = `${Math.random() * 100}vw`;
+  span.style.animationDuration = `${2 + Math.random() * 3}s`;
+  span.textContent = chars[Math.floor(Math.random() * chars.length)];
+  rainContainer.appendChild(span);
+}
 
 /*
 this function takes the input from the checkboxes and uses it in the 
